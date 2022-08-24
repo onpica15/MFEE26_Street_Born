@@ -1,0 +1,72 @@
+* {
+  /* outline: 1px solid red; */
+}
+
+.cooler_lesson_background {
+  background-image: url(../../../Images/Lesson/lesson_background/04.jpeg);
+  background-size: 100% 100%;
+  /* height: 200%; */
+  /* background-repeat: no-repeat; */
+}
+
+.cooler_arrowcenter {
+  padding-top: 15%;
+  /* display: flex; */
+  /* justify-items: center; */
+  /* align-items: center; */
+}
+
+.shadowblack {
+  -webkit-box-shadow: 5px 5px 0px 1px #000000;
+  box-shadow: 5px 5px 0px 1px #000000;
+}
+
+/* svg改顏色範例 */
+.cooler_icon_wrap:hover {
+  stroke: rgb(253, 253, 253);
+  fill: black;
+  cursor: pointer;
+}
+
+.cooler_map_size {
+  width: 70rem;
+  height: 50rem;
+}
+
+.coolerphone {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.coolermap {
+  /* width: .5em;
+  height: .5em; */
+}
+
+.coolermap svg:hover {
+  stroke: var(--main);
+  fill: var(--main);
+}
+
+.cooler-btn {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background-color: var(--main);
+  box-shadow: 3px 3px 0 0 #61dafb82;
+  outline: none;
+  transition: 1s ease;
+  /* margin-right: 16px; */
+  /* margin-top: 24px; */
+  text-decoration: none;
+}
+
+.cooler-btn:hover {
+  box-shadow: 8px 8px 0 0 #61dafbd2;
+  background-color: black;
+  color: var(--main);
+  outline: 1px solid var(--main);
+}
+
+.card-text {
+  text-align: justify !important;
+}
+/* ----------RWD------------------- */

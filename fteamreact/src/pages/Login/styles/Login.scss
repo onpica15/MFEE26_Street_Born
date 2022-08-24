@@ -1,0 +1,49 @@
+.cursorpointer {
+    cursor: pointer;
+}
+
+.LoginBox {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    height: calc(100vh - 80px);
+    background: #2D2D2D;
+}
+
+
+.LoginCarousel {
+    display: none;
+    background: #2D2D2D;
+    z-index: 5;
+}
+
+.LoginCard {
+    position: relative;
+    transition: .5s;
+    transform-style: preserve-3d;
+    .LoginFront {
+        position: absolute;
+        backface-visibility: hidden;
+    }
+    .LoginBack {
+        position: absolute;
+        transform: rotateY(-180deg);
+        backface-visibility: hidden;
+    }
+}
+
+.LoginCardRotate {
+    transform: rotateY(180deg);
+}
+
+// 電腦版
+@media screen and (min-width: 1200px) {
+    .LoginBox{
+        display: flex;
+        top: 88px;
+        height: calc(100% - 88px);
+    }
+    .LoginCarousel {
+        display: block;
+    }
+}

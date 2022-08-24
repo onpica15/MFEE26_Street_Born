@@ -1,0 +1,27 @@
+.attributes {
+    outline: 1px solid rgb(193, 193, 193);
+    outline-offset: -3px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .cus-atrib-img{
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+    
+  
+    label {
+      font-size: 12px;
+      font-weight: 600;
+    }
+    h5 {
+      font-weight: 300;
+    }
+  }

@@ -1,0 +1,13 @@
+.home-bg {
+    background:url(../../../src/Images/Home//HomeBg/HomeBg1234.png);
+    filter: brightness(1);
+    background-size: cover;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .home-bg {
+        background:none;
+        
+    }
+  }

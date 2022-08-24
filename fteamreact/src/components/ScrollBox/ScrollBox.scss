@@ -1,0 +1,12 @@
+.ScrollBox {
+    overflow: auto;
+}
+.ScrollBox::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+
+.ScrollBox::-webkit-scrollbar-thumb {
+// background-color: #f5f5f56f;
+   background-color: black;
+}

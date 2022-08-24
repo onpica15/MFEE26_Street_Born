@@ -1,0 +1,31 @@
+.scrollTopBtn {
+    width: 20%;
+    font-size: .8rem;
+    font-weight: 700;
+    background-color: black;
+    color: var(--main);
+}
+.recordFilter {
+    select {
+        text-align: center;
+        color: white;
+        background: rgba(0, 0, 0, 0.770);
+        border: 1px solid white;
+        height: 40px;
+        border-radius: 5px;
+        box-shadow: 3px 3px 0 0 #00000082;
+        .recordFilterOption {
+            height: 60px;
+        }
+    }
+    select:focus {
+        outline: none;
+    }
+}
+
+// 手機版
+@media screen and (max-width: 1200px) {
+    .recordEchartsBox {
+        display: none;
+    }
+}

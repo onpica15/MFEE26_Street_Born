@@ -1,0 +1,139 @@
+// * {
+//   outline: 1px solid red;
+// }
+
+.cooler_lesson_card_category_price {
+  align-items: flex-end;
+}
+
+.cooler_lesson_card_btn:focus {
+  box-shadow: none !important;
+}
+
+.cooler_lesson_card_name {
+  color: aliceblue;
+  background-color: black;
+  width: 20%;
+  font-weight: 600;
+}
+
+.cooler_lesson_card {
+  transition: 0.6s;
+  height: 100%;
+}
+
+.cooler_lesson_card_title {
+  font-weight: 600;
+}
+
+.cooler_lesson_card_collect svg {
+  color: red;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.cooler_lesson_card:hover {
+  -webkit-box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.29);
+  box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.29);
+  background-color: #373737;
+  transform: scale(1.05, 1.3);
+  h5,
+  .cooler_lesson_card_quota {
+    color: white;
+  }
+
+  .cooler_lesson_card_name {
+    color: black;
+    background-color: white;
+  }
+}
+
+.cooler_lesson_card {
+  padding: 0.5rem;
+  margin-top: 5%;
+  margin-left: 3.5%;
+}
+
+.cooler_lesson_card_book {
+  // text-decoration: none;
+  border: none;
+  background-color: var(--main);
+}
+
+.cooler_lesson_card_title_collect > .cooler_lesson_card_collect {
+  display: none !important;
+}
+
+.cooler_lesson_card {
+  div,
+  p,
+  span,
+  button {
+    line-height: 1.5rem;
+  }
+}
+
+//-------------------RWD--------------------
+@media (min-width: 1500px) {
+  .cooler_lesson_card {
+    h5 {
+      font-size: 1.5rem;
+    }
+    p,
+    span,
+    button {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .cooler_lesson_card_quota {
+    font-size: small;
+  }
+
+  .cooler_lesson_card h5 {
+    font-size: 1.06rem;
+  }
+}
+
+@media (max-width: 1225px) {
+  .cooler_lesson_card_quota {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 500px) {
+  .cooler_lesson_card_price {
+    padding-bottom: 14%;
+  }
+
+  .cooler_lesson_card {
+    margin: 0;
+    p,
+    span,
+    button {
+      font-size: xx-small;
+    }
+  }
+
+  .cooler_lesson_card_quota_number {
+    width: 20%;
+
+    justify-content: space-between !important;
+  }
+
+  .cooler_lesson_card_category_price {
+    flex-direction: row !important;
+    padding-top: 5%;
+  }
+
+  .cooler_lesson_card_collect {
+    display: none;
+  }
+
+  .cooler_lesson_card_title_collect > .cooler_lesson_card_collect {
+    display: block !important;
+  }
+}

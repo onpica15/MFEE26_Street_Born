@@ -1,0 +1,13 @@
+.allRecordWarp {
+    height: 100%;
+}
+.memberAllRecordWrap {
+    overflow: hidden;
+}
+
+// 手機版
+@media screen and (max-width: 1200px) {
+    .allRecordWarp {
+        height: 100vh;
+    }
+}

@@ -1,0 +1,58 @@
+.watchFavoriteWrap {
+    z-index: 6;
+    .watchFavoriteBox {
+        border: 4px solid var(--main);
+        .adminfavoriteCard {
+            cursor: pointer;
+            height: 17.5%;
+            background: rgba(0, 0, 0, 0.770);
+            color: white;
+            border: 1px solid var(--main);
+            transition: .3s;
+            box-shadow: 5px 5px 15px 5px #000000;
+            img {
+                border-right: 1px solid black;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            h5 {
+                font-size: 1rem;
+            }
+        }
+        .adminfavoriteCard:hover {
+            border: 4px solid red;
+            transform: translateY(-4px);
+            p {
+                font-weight: 600;
+                transform: skew(-10deg, 0deg);
+            }
+        }
+    }
+
+    .watchFavoriteTitle {
+        position: relative;
+        h2 {
+            font-size: 2.5rem;
+            text-shadow: 0 1px 0 #CCCCCC, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+        }
+        svg {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+// 筆電版
+@media screen and (max-width: 1400px) {
+    .watchFavoriteWrap {
+        .watchFavoriteBox {
+            .adminfavoriteCard {
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}

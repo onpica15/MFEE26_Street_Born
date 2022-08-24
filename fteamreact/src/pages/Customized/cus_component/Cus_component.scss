@@ -1,0 +1,121 @@
+
+
+
+.cus_data_tab {
+  max-height: 240px;
+}
+
+
+.share-card {
+  width: 300px;
+  height: 400px;
+  outline: 1px solid gray;
+  display: flex;
+  padding: 32px;
+  box-shadow: 8px 8px 0 0 black;
+  background-color: white;
+  transition: 1s ease;
+  
+  .hover{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    z-index: 99;
+    top: 50px;
+    right:-100px;
+    opacity: 0;
+    transform: scale(.8);
+    transition: 1.5s ease;
+    pointer-events: none;
+  }
+  .share-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    text-align: right;
+    width: 120px;
+    
+    word-wrap:break-word;
+    svg{
+      width: 24px;
+      height: 24px;
+      stroke:black;
+      transform: scale(0);
+      transition: 1s ease;
+      transform-origin: top right;
+    }
+
+    h3{
+      width: 120px;
+      word-wrap:normal;
+      
+      
+      overflow: hidden;
+    }
+    
+
+    .share-creator {
+      display: flex;
+
+      align-items: flex-end;
+
+      .share-ava {
+        width: 32px;
+        height: 32px;
+        border-radius: 50px;
+        overflow: hidden;
+        margin-right: 8px;
+
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+      p {
+        font-size: 10px;
+      }
+      h6 {
+        line-height: 10px;
+      }
+    }
+  }
+
+  .board {
+    width: 50%;
+    height: 320px;
+    padding: 0px;
+    overflow: hidden;
+
+    img {
+      height: 100%;
+      object-fit: contain;
+      margin-left: -120px;
+      
+    }
+  }
+}
+
+
+.share-card:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 12px 12px 0 0 var(--main);
+    .hover{
+      opacity: 1;
+      transform: scale(1);
+    }
+    svg{
+      transform: scale(1);
+     stroke: var(--main);
+    }
+    
+    .board{
+        transition: 1s ease;
+        padding: 0px;
+        height: 340px;
+    }
+
+}
+
+

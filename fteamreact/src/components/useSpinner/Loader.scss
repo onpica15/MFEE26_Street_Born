@@ -1,0 +1,22 @@
+.LoaderBox {
+    background: rgb(145, 145, 145);
+    position: absolute;
+    z-index: 10;
+    // top: 80px;
+    // height: calc(100vh - 80px);
+    height: 100vh;
+    // padding: 15%;
+    padding-top: 55%;
+}
+
+.LoaderKidBox {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+// 電腦版
+@media screen and (min-width: 1200px) {
+    .LoaderBox {
+        padding-top: 15%;
+    }
+}

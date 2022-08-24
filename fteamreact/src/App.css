@@ -1,0 +1,412 @@
+:root {
+  --main: #61dafb;
+}
+
+.slick-next {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  background-color: transparent !important;
+}
+
+.slick-prev {
+  width: 20px !important;
+  height: 20px !important;
+  border-radius: 50%;
+  background-color: transparent !important;
+}
+
+.slick-next::before {
+  color: #000 !important;
+  content: '⇨' !important;
+  background-color: transparent !important;
+  transition: .3 ease !important;
+}
+
+.slick-prev::before {
+  content: '⇦' !important;
+  color: #000 !important;
+  background-color: transparent !important;
+  transition: .3 ease !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+  /* outline: thin solid rgb(203, 108, 108); */
+}
+
+/* 要用直接下className */
+.relative {
+  position: relative;
+}
+
+/* 要用直接下className */
+.absolute {
+  position: absolute;
+}
+
+/* mui tabs setting */
+/* 要拿掉click特效 在<Tab/> 加上 disableRipple={true} */
+
+.css-1a0mt41-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-weight: 700;
+  color: rgb(58, 58, 58) !important;
+}
+
+.css-12a74cf-MuiButtonBase-root-MuiTab-root.Mui-selected {
+  font-weight: 800;
+  color: black !important;
+}
+
+/* border color */
+.css-1aquho2-MuiTabs-indicator {
+  background-color: var(--main) !important;
+}
+
+/* border color */
+/* mui tabs setting */
+
+.nav-column {
+  flex-direction: column !important;
+}
+
+.top-grid {
+  position: absolute;
+  z-index: 6;
+  height: 88px;
+}
+
+.bottom-grid {
+  height: 100%;
+}
+
+.logo-wrap {
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.work-area {
+  height: 86%;
+}
+
+.logo-wrap img {
+  width: 150px;
+  filter: brightness(0);
+}
+
+.menu-wrap svg {
+  fill: #000;
+  width: 20px;
+  height: 20px;
+}
+
+.MuiList-root a {
+  width: 100%;
+  display: block;
+  color: black;
+  text-decoration: none;
+}
+
+.like-icon-wrap {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  transition: .3s ease;
+  cursor: pointer;
+}
+
+.like-icon-wrap:hover {
+  transform: scale(1.3);
+}
+
+.like-icon-wrap:hover .like-icon-count {
+  background-color: rgb(78, 46, 46);
+}
+
+.like-icon-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -4px;
+  right: -7px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .3s ease;
+}
+
+.like-icon-count span {
+  font-size: 5px;
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  color: var(--main);
+  transform: translateY(-50%) translateX(0%);
+}
+
+.favoritesList {
+  position: absolute;
+  width: 280px;
+  height: 450px;
+  right: -95px;
+  top: 38px;
+  background-color: rgb(250, 250, 250);
+  z-index: 99999999999999999999999999999999999999999;
+  border-radius: 5px;
+}
+
+.favoritesBigBox {
+  margin: 10px;
+  border-bottom: 1px solid gray;
+  z-index: 99999999999999999999999999999999999999999
+}
+
+.favoritesBoxImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.favoritesBoxImg img {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.favoritesBody {
+  padding-left: 13px;
+  z-index: 99999999999999999999999999999999999999999
+}
+
+.favoritesBody h5 {
+  font-size: 0.65rem;
+  z-index: 99999999999999999999999999999999999999999
+}
+
+.favoritesBodyBrand {
+  font-size: 0.5rem;
+  flex-grow: 1;
+  color: gray;
+  z-index: 99999999999999999999999999999999999999999
+}
+
+.favoritesBodyPrice span {
+  font-size: 0.5rem;
+
+  z-index: 99999999999999999999999999999999999999999
+}
+
+.favoritesInt {
+  display: flex;
+  justify-content: center;
+  z-index: 9999999999999999999999999999999999;
+}
+
+.favoritesInt button {
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px;
+  width: 90%;
+  margin-bottom: 20px;
+}
+
+/* ------------------------------------------------------------------------------------- */
+.user-icon-wrap {
+  width: 20px;
+  height: 20px;
+  margin-right: 16px;
+  cursor: pointer;
+  /* transition: .3s ease; */
+}
+
+/* .user-icon-wrap:hover {
+  transform: scale(1.3);
+} */
+
+.cart-icon-wrap {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin-right: 32px;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.cart-icon-wrap:hover {
+  transform: scale(1.3);
+}
+
+.cart-icon-wrap:hover .cart-icon-count {
+  background-color: #000;
+}
+
+.cart-icon-count {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -4px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: .3s ease;
+}
+
+.cart-icon-count span {
+  font-size: 5px;
+  width: 50%;
+  height: 50%;
+  color: var(--main);
+  transform: translateY(-50%) translateX(0%);
+}
+
+.auth-text-wrap {
+  font-size: 18px;
+  margin-right: 32px;
+  transform: translateY(5px);
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.auth-text-wrap:hover {
+  transform: translateY(5px) scale(1.2);
+}
+
+.like-icon-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+
+.user-icon-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.userLogin-icon-box {
+  margin-top: 12%;
+  width: 100%;
+  height: 100%;
+  margin-right: 16px;
+  transition: 0.3s ease;
+}
+
+.userLogin-icon-box:hover {
+  transform: scale(1.3);
+}
+
+.userLogin-icon-wrap {
+  height: 35px;
+  width: 35px;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.6),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.user-icon-text {
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-icon-wrap svg {
+  width: 100%;
+  height: 100%;
+}
+
+.sidebar_container {
+  top: 88px;
+  position: absolute;
+  z-index: 5;
+  height: calc(100% - 88px);
+}
+
+.sidebar-wrap {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-left: 30px;
+  height: 90%;
+  border-left: 1px solid #000;
+}
+
+.sidebar-wrap a {
+  color: black;
+  text-decoration: none;
+  transition: 1s ease-in;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.sidebar-wrap a:hover {
+  font-size: 1.5rem;
+  color: #2ce6ff;
+  letter-spacing: 20px;
+}
+
+/* confirm and alert style setting */
+.public-confirm-modal {
+  background-color: #2a2a2a49;
+}
+
+.public-confirm-modal .modal-content {
+  background-color: rgb(243, 242, 242) !important;
+  border-radius: 0 !important;
+}
+
+.public-confirm-modal .modal-header {
+  justify-content: start !important;
+  border: none !important;
+}
+
+.public-confirm-modal .modal-body {
+  text-align: center !important;
+  border: none !important;
+}
+
+.public-confirm-modal .modal-footer {
+  border: none !important;
+}
+
+.public-confirm-btn {
+  width: 50px !important;
+  background-color: #2d2d2d !important;
+  color: white;
+  border: none !important;
+  font-size: .8rem !important;
+  transition: .3s ease;
+}
+
+.public-confirm-btn:hover {
+  opacity: .9;
+  transform: translateY(-5px) translateX(-3px);
+  box-shadow: 3px 5px 10px 0px rgb(0, 0, 0);
+}
+
+.public-confirm-btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* confirm and alert style setting */
+@media screen and (max-width: 768px) {
+  .logo-wrap {
+    margin-left: 5px;
+  }
+
+  .logo-wrap img {
+    width: 110px;
+  }
+}

@@ -1,0 +1,417 @@
+.cus_matte {
+    background-color: rgb(79, 79, 82);
+    position: absolute;
+    z-index: -2;
+
+    mask: url(../../Images/Customized/cus_bg_mask.svg);
+    mask-size: cover;
+    overflow: hidden;
+
+}
+
+.cus-bg {
+    object-fit: cover;
+
+}
+
+.cus_board_main {
+    width: 100%;
+    height: auto;
+}
+
+.main_img_container {
+    width: 100%;
+    height: 60%;
+
+}
+
+.cus_main_card {
+    width: 100%;
+
+    padding: 24px;
+    background-color: black;
+}
+
+.cus_product_card {
+    width: 100%;
+    padding: 24px;
+    background-color: rgb(255, 255, 255);
+    // border: 1px solid lightgray;
+    box-shadow: 10px 10px 0 0 black;
+}
+
+.viv-btn {
+    padding: .5em 2em .5em 2em;
+    background-color: var(--main);
+    box-shadow: 3px 3px 0 0 #61dafb82;
+    border: none;
+    transition: 1s ease;
+    margin-right: 16px;
+    margin-top: 24px;
+    text-decoration: none;
+
+
+}
+
+.viv-btn:hover {
+    box-shadow: 8px 8px 0 0 #61dafbd2;
+    background-color: black;
+    color: var(--main);
+    border: 1px solid var(--main);
+
+}
+
+.viv-p {
+    font-weight: 100;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 0px;
+}
+
+
+
+.cus-product-container {
+    width: 100%;
+    height: 60vh;
+
+    // border: 1px solid rgb(43, 92, 215); 
+}
+
+.cus-product-matte {
+    background-color: rgb(79, 79, 82);
+    mask: url(../../Images/Customized/skateboard_fram.svg);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+input {
+    border: none;
+    /* Removes the default border */
+}
+
+input:focus {
+    outline: none
+        /* Removes the border when the input is clicked */
+}
+
+
+.viv-input {
+    width: 100%;
+    padding-top: 16px;
+    border-bottom: 1px solid gray;
+}
+
+
+.skbtn-prev {
+    min-width: 64px;
+    min-height: 64px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 100%;
+    outline: 1px solid black;
+    background-image: url(../../Images/Customized/arrow_prev.svg);
+    background-position: center;
+    background-size: cover;
+    transition: .5s ease;
+    margin: 12px;
+
+}
+
+.skbtn-prev:hover {
+    background: rgba(0, 0, 0, 1);
+
+    background-image: url(../../Images/Customized/arrow_prev_w.svg);
+
+    background-position: center;
+    background-size: cover;
+
+
+
+
+}
+
+.skbtn-next {
+    min-width: 64px;
+    min-height: 64px;
+    background: rgba(255, 255, 255, .5);
+    border-radius: 100%;
+    outline: 1px solid black;
+    background-image: url(../../Images/Customized/arrow_next.svg);
+    background-position: center;
+    background-size: cover;
+    transition: .5s ease;
+    margin: 12px;
+
+}
+
+.skbtn-next:hover {
+
+    background: rgba(0, 0, 0, 1);
+    background-image: url(../../Images/Customized/arrow_next_w.svg);
+    background-position: center;
+    background-size: cover;
+
+
+
+
+}
+
+.step-control {
+    width: 100%;
+    padding: 0px 12px;
+    display: block;
+ 
+   
+    
+    
+}
+.price{
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.cus_card_container {
+    position: absolute;
+    z-index: 15;
+
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+
+}
+
+.cus_card {
+    width: 100%;
+
+    margin-right: 24px;
+    padding: 24px;
+
+}
+
+
+.cus_clip {
+    width: 100%;
+    height: 100%;
+    // border: 1px solid blue;
+    mask: url(../../Images/Customized/board_clip.svg);
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+
+    img {
+        width: 100%;
+        height: 100%;
+
+    }
+}
+
+.cus_select {
+    width: 54px;
+    height: 54px;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 8px;
+    background-color: rgb(60, 72, 76);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 100%;
+        pointer-events: none;
+    }
+
+    input {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+    }
+
+
+}
+
+.select_toggle {
+    display: none;
+}
+
+.style-icon {
+    width: 24px;
+    height: 24px;
+    margin: 16px;
+}
+
+
+.creat-box {
+    width: 200px;
+    height: 400px;
+    // outline: 1px solid black;
+    text-align: center;
+    line-height: 400px;
+}
+.links{
+    display: flex;
+}
+
+@media only screen and (min-width: 768px){
+
+    .step-control {
+     
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+         
+          
+    }      
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) {
+    .cus_container {
+        position: relative;
+        // border: 1px solid gray;
+        display: flex;
+        // justify-content: end;
+        padding: 48px;
+        height: 100vh;
+
+    }
+
+    .main_img_container {
+        width: 100%;
+        height: calc(100% - 80px);
+        // border: 1px solid lightcoral;
+    }
+
+
+    .cus_board_main {
+        width: auto;
+        height: 100%;
+
+    }
+
+
+
+    .viv-p {
+        margin-bottom: 24px;
+    }
+
+
+    .cus_main_card {
+
+        padding: 48px;
+
+    }
+
+    .cus-product-container {
+        width: 50%;
+        height: calc(100% - 80px);
+
+
+    }
+
+    .cus_clip {
+        width: 100%;
+        height: 100%;
+        border: 1px solid blue;
+        mask: url(../../Images/Customized/board_clip.svg);
+        mask-size: cover;
+        mask-position: center;
+
+
+        img {
+            width: 100%;
+            height: 100%;
+
+        }
+    }
+
+    .cus_product_card {
+        width: 500px;
+        border: 1px solid rgb(223, 223, 223);
+
+    }
+
+    .cus_card_container {
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        /* border: 1px solid lightcoral; */
+
+    }
+
+    .cus_card {
+        /* border: 1px solid lightsalmon; */
+        display: flex;
+        justify-content: end;
+
+
+    }
+
+
+
+
+
+    .step-control {
+        display: flex;
+        justify-content: end;
+        margin-top: 48px;
+
+        padding: 24px 48px 24px 48px;
+    }
+
+    .cus_select {
+        width: 64px;
+        height: 64px;
+
+    }
+
+    .select_toggle {
+        display: block;
+    }
+
+
+
+
+}

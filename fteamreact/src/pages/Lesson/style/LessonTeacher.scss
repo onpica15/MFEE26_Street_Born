@@ -1,0 +1,130 @@
+* {
+  // outline: 1px solid green;
+  // transition: 0.6s;
+}
+
+.cooler_teacher_head_button {
+  // border: none;
+  opacity: 0;
+}
+
+.cooler_teacher_card {
+  margin: 4% 1% 4% 1%;
+  width: 48%;
+  height: 20rem;
+  -webkit-box-shadow: 5px 10px 0px -2px #000000;
+  box-shadow: 5px 10px 0px -2px #000000;
+  transition: 0.6s;
+}
+
+.cooler_teacher_log {
+  background-image: url(../../../Images/Lesson/teacher_logo/TEACHER.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  // width: 100%;
+}
+
+.cooler_teacher_card_head {
+  clip-path: circle(50% at 50% 50%);
+  // background-image: url(../../../Images/Lesson/teacher_head/hiphop/Nike.jpg);
+  background-size: contain;
+
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  // z-index: 0;
+  right: 10%;
+  top: 1%;
+}
+
+.cooler_teacher_card_circle {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  position: relative;
+  // z-index: 1;
+  background-color: #dfdfdf;
+}
+
+.cooler_teacher_card_teachername,
+.cooler_teacher_card_head_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cooler_teacher_card__info {
+  text-align: justify;
+}
+
+.cooler_teacher_card_info {
+  text-align: justify;
+}
+
+.cooler_teacher_card:hover {
+  -webkit-box-shadow: 13px 14px 0px -2px #2ce6ff;
+  box-shadow: 13px 14px 0px -2px #2ce6ff;
+  transform: scale(1.04, 1.03);
+
+  .cooler_teacher_card_head {
+    transition: 0.6s;
+    transform: scale(1.2, 1.2);
+  }
+
+  .cooler_teacher_card_teachername {
+    color: white;
+  }
+
+  .cooler_teacher_card__info,
+  .cooler_teacher_card_bottom {
+    color: white;
+    background-color: #000000;
+  }
+
+  .cooler_teacher_card_right {
+    width: 100%;
+  }
+
+  .cooler_teacher_card_teachername {
+    justify-content: end;
+    padding-top: 1.5rem;
+    padding-right: 0.5rem;
+    // background-color: #000000;
+  }
+
+  .cooler_teacher_log {
+    flex-direction: column;
+  }
+
+  .cooler_teacher_card_info {
+    padding-top: 2rem;
+  }
+
+  .cooler_teacher_card_right {
+    height: 0%;
+  }
+
+  .cooler_teacher_card_head_circle {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// ----------------RWD------------------
+
+@media (min-width: 1500px) {
+  .cooler_teacher_card_teachername {
+    font-size: 2.2rem;
+  }
+
+  .cooler_teacher_card_info {
+    font-size: 1.23rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .cooler_teacher_card {
+    width: 100%;
+    margin: 4% 0 4% 0;
+  }
+}

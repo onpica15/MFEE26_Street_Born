@@ -1,0 +1,227 @@
+.orders-bg {
+    background: url(../../Images/Orders/bg01.svg);
+    background-size: cover;
+}
+
+// * {
+//     outline: thin solid black;
+// }
+
+
+.search {
+    margin: 0 5px 2px 0;
+    background: rgba(0, 0, 0, 0.8);
+    height: 80%;
+    border-radius: 40px;
+    outline: 2px solid var(--main);
+}
+
+.search:hover>.search-txt {
+    width: 200px;
+    color: rgb(226, 226, 226);
+}
+
+.search-txt:focus {
+    width: 200px;
+}
+
+
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+    color: rgb(225, 225, 224);
+    font-size: 16px;
+    transition: ease 0.3s;
+    line-height: 40px;
+    width: 110px;
+}
+
+.order-search-wrap {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-section {
+    height: 75%;
+}
+
+.order-card-wrap {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    min-height: 130px;
+    background-color: white;
+    border: thin solid black;
+    box-shadow: 20px 7px 0px 1px #000000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    transform: translateX(15px);
+    transition: .5s ease;
+}
+
+.order-card-wrap:hover {
+    transform: translateY(-4px);
+    box-shadow: 20px 14px 0px 1px #000000;
+}
+
+.order-card-main {
+    position: relative;
+    min-height: 130px;
+}
+
+.recipient {
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.shipping {
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.convence-address {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+}
+
+.order-mail {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+}
+
+.hr-div {
+    height: 1px;
+    background-color: #000000;
+}
+
+.orders-card-scroll {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.orders-card-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #46424000;
+}
+
+.orders-card-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.orders-card-scroll::-webkit-scrollbar-thumb {
+    background-color: #f5f5f5;
+}
+
+.orders-card-scroll::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+.orders-card-scroll::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.orders-detail-card-scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+.orders-detail-card-scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #46424000;
+}
+
+.orders-detail-card-scroll::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.orders-detail-card-scroll::-webkit-scrollbar-thumb {
+    background-color: #00000010;
+}
+
+.orders-detail-card-scroll::-webkit-scrollbar-track-piece {
+    background-color: transparent;
+}
+
+.orders-detail-card-scroll::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+.detail-single-item-wrap {
+    height: 100px;
+    border-bottom: 1px solid rgb(159, 159, 159);
+}
+
+
+@media screen and (max-width: 768px) {
+    .orders-bg {
+        /* background: none; */
+        background: url('../../Images/Orders/Frame\ 56\ \(2\).png');
+        background-position: 1 0;
+        background-size: cover;
+    }
+
+    .order-section {
+        height: 90%;
+    }
+
+    .order-card-wrap {
+        width: 90%;
+        min-height: 130px;
+        background-color: white;
+        border: thin solid black;
+        box-shadow: 20px 7px 0px 1px #000000;
+        margin-bottom: 30px;
+        transform: translateX(15px);
+        transition: .3s ease;
+    }
+
+    .orders-card-scroll {
+        width: 98%;
+        height: 100%;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    }
+
+    .orders-card-scroll::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+        background-color: #46424000;
+    }
+
+    .orders-card-scroll::-webkit-scrollbar-track {
+        background-color: #46424000;
+    }
+
+    .orders-card-scroll::-webkit-scrollbar-thumb {
+        background-color: #a8a8a8;
+    }
+
+    .orders-card-scroll::-webkit-scrollbar-track-piece {
+        background-color: transparent;
+    }
+
+    .orders-card-scroll::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+}

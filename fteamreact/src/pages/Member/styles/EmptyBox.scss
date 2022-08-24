@@ -1,0 +1,14 @@
+.EmptyBox {
+    h2 {
+        color: red;
+        font-weight: 600;
+        font-size: 4rem;
+        padding-bottom: 10%;
+    }
+
+    svg {
+        background: black;
+        border-radius: 20px;
+        box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 5px 0px 50px 41px rgba(0,0,0,0.6);
+    }
+}

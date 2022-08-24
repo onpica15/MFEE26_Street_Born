@@ -1,0 +1,75 @@
+.cooler_card_img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  // outline: thin solid rgb(20, 237, 9);
+}
+
+.cooler_card_wrap {
+  // height: 110%;
+}
+
+.cooler_gray {
+  color: #979797;
+}
+
+.cooler_lessoncard_background {
+  background-image: url(../../../../src/Images/Lesson/lesson_background/04.jpeg);
+  background-size: auto 100%;
+}
+
+.cooler_lesson_position {
+  padding-top: 4%;
+}
+
+// --------------RWD-------------------
+@media (min-width: 1630px) {
+  .lesson_card {
+    h4 {
+      font-size: 1.9rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    p,
+    span {
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (max-width: 1630px) {
+  .lesson_card {
+    h4 {
+      font-size: 1.3rem;
+    }
+    h5 {
+      font-size: 1.2rem;
+    }
+
+    p,
+    span {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .lesson_card {
+    h4 {
+      font-size: 1.5em;
+    }
+    h5 {
+      font-size: 1.3em;
+    }
+
+    p,
+    span {
+      font-size: 1em;
+    }
+    background-color: white;
+  }
+}

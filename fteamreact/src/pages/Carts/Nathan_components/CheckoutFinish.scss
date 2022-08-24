@@ -1,0 +1,18 @@
+// * {
+//   outline: thin solid lightblue;
+// }
+
+.text-main {
+  color: var(--main);
+}
+
+.text-setting {
+  font-size: .9rem;
+  text-align: justify; // 文字左右切齊設定
+  text-justify: inter-ideograph;
+  word-wrap: break-word;
+}
+
+.check-orders:hover {
+  text-decoration: underline;
+}

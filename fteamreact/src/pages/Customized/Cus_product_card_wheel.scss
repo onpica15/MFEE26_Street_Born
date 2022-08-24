@@ -1,0 +1,102 @@
+.wheel-img{
+    width: 375px;
+    height: 300px;
+    // outline: 1px solid lightsalmon;
+    position: relative;
+    margin: 0 auto;
+
+    .wheel-bg{
+        position: absolute;
+        width: 100%;
+        
+        object-fit: cover;
+
+
+    }
+    .wheel{
+        position: absolute;
+        z-index: 5;
+        width: 20%;
+        top: 107px;
+        left: 190px;
+        
+        
+    }
+   
+}
+
+.wheel-selectors{
+    width: 100%;
+    display: flex;
+    margin-top: 24px;
+    margin-bottom: 12px;
+   
+    .wheel-select{
+        width: 20%;
+        min-height: 50px;
+        position: relative;
+        // outline: 1px solid lawngreen;
+        margin-right: 20px;
+       
+
+        input{
+            position: absolute;
+            width: 90%;
+            height: 90%;
+
+        }
+       
+
+        img{
+            position: absolute;
+            z-index: 0;
+            width: 90%;
+            object-fit: cover;
+            pointer-events: none;
+
+        }
+
+    }
+}
+
+.bg-train{
+    position: absolute;
+    transition: 1s ease;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .wheel-img{
+        width: 500px;
+        height: 500px;
+       
+        position: relative;
+    
+      
+        .wheel{
+            position: absolute;
+            z-index: 5;
+            width: 22%;
+            top: 135px;
+            left: 245px;
+            transition: .5s ease;
+            
+            
+        }
+       
+    }
+    .wheel:hover{
+        transform: rotateZ(360deg);
+    }
+    
+    .wheel-select{
+        
+        height: 80px;
+       
+    }
+
+
+    
+}
+
+

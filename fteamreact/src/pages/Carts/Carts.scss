@@ -1,0 +1,263 @@
+.carts-bg {
+  background: url(../../Images/Orders/bg01.svg);
+  background-size: cover;
+}
+
+// * {
+//   outline: 1px solid rgb(0, 0, 0);
+// }
+
+.tabs-section {
+  height: 10%;
+}
+
+.carts-card-section {
+  height: 70%;
+}
+
+.total-count-section {
+  height: 20%;
+}
+
+.card-scroll-list-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.card-scroll-list {
+  transition: 0.5s;
+  display: flex;
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  left: -0%;
+}
+
+.products-card-scroll,
+.customized-card-scroll,
+.lesson-card-scroll {
+  width: 33.33%;
+  height: 99%;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+.products-card-scroll::-webkit-scrollbar,
+.customized-card-scroll::-webkit-scrollbar,
+.lesson-card-scroll::-webkit-scrollbar {
+  /* background-color: rgba(0, 0, 0, 0.425); */
+  width: 5px;
+  height: 5px;
+  background-color: #46424000;
+}
+
+.products-card-scroll::-webkit-scrollbar-track,
+.customized-card-scroll::-webkit-scrollbar-track,
+.lesson-card-scroll::-webkit-scrollbar-track {
+  background-color: #46424000;
+}
+
+.products-card-scroll::-webkit-scrollbar-thumb,
+.customized-card-scroll::-webkit-scrollbar-thumb,
+.lesson-card-scroll::-webkit-scrollbar-thumb {
+  background-color: #F5F5F5;
+}
+
+.products-card-scroll::-webkit-scrollbar-corner,
+.customized-card-scroll::-webkit-scrollbar-corner,
+.lesson-card-scroll::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.card-scroll-list {
+  display: flex;
+}
+
+.checkout-btn {
+  font-size: .8rem;
+  font-weight: 700;
+  background-color: var(--main);
+  color: black;
+  transition: .3s ease;
+}
+
+.checkout-btn:hover {
+  transform: translateX(-2px) translateY(-2px);
+  box-shadow: 4px 4px 0px 0px #047d92;
+}
+
+
+.total-count-wrap {
+  border-radius: 3px 3px 0 0;
+  background-color: #464240;
+  width: 91%;
+}
+
+.total-top-grid {
+  height: 33.33%;
+  color: var(--main);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.total-bottom-grid {
+  height: 66.66%;
+}
+
+.cart-total-text {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: whitesmoke;
+}
+
+.btn-check-wrap {
+  justify-content: center !important;
+}
+
+// .check-all[type=checkbox] {
+//   background-color: #464240;
+//   color: #F5F5F5;
+//   user-select: none;
+// }
+
+// .check-all[type=checkbox]:checked {
+//   background-color: #ffffff;
+//   color: #000000;
+//   user-select: none;
+// }
+
+/* mui tabs setting */
+
+@media screen and (max-width: 768px) {
+  .carts-bg {
+    /* background: none; */
+    background: url('../../Images/Orders/Frame\ 56\ \(2\).png');
+    background-position: 1 0;
+    background-size: cover;
+  }
+
+  .tabs-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    height: 15%;
+  }
+
+  .carts-selection {
+    background-color: transparent;
+    border: none;
+    border-bottom: .5px solid black;
+  }
+
+  /* 清除 bootstrap 預設focus外框 */
+  .carts-selection:focus {
+    outline: none;
+  }
+
+  .carts-selection option:focus {
+    background-color: transparent;
+    outline: none;
+  }
+
+  .carts-card-section {
+    /* background-color: rgb(95, 93, 93); */
+    min-height: 85%;
+  }
+
+  .carts-card-wrap {
+    width: 90%;
+  }
+
+  .card-scroll-list-wrap {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .card-scroll-list {
+    transition: 0.5s;
+    display: flex;
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    left: -0%;
+  }
+
+  .products-card-scroll,
+  .customized-card-scroll,
+  .lesson-card-scroll {
+    width: 33.33%;
+    height: 320px;
+    overflow-y: scroll;
+  }
+
+  .products-card-scroll::-webkit-scrollbar,
+  .customized-card-scroll::-webkit-scrollbar,
+  .lesson-card-scroll::-webkit-scrollbar {
+    /* background-color: rgba(0, 0, 0, 0.425); */
+    scrollbar-width: 0;
+    background-color: transparent;
+  }
+
+  .total-count-section {
+    position: fixed;
+    background-color: black;
+    bottom: 0;
+    height: 125px;
+  }
+
+  .cart-total-title {
+    font-weight: 700;
+    color: var(--main);
+  }
+
+  .cart-total-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: whitesmoke;
+  }
+
+  .total-top-grid {
+    height: 33.33%;
+  }
+
+  .total-bottom-grid {
+    height: 66.66%;
+  }
+
+  .checkout-btn {
+    font-size: .8rem;
+    background-color: var(--main);
+    color: black;
+    transition: .3s ease;
+  }
+
+  .checkout-btn:focus {
+    outline: none;
+  }
+
+  .checkout-btn:hover {
+    transform: translateX(-2px) translateY(-2px);
+    box-shadow: 4px 4px 0px 0px #047d92;
+  }
+
+  .total-count-wrap {
+    width: 100%;
+  }
+
+  .counter-span {
+    text-align: center;
+    font-size: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--main);
+  }
+}

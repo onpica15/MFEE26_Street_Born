@@ -1,0 +1,117 @@
+.adminTable {
+
+  .adminFilter {
+    height: 10%;
+
+    .adminsearch{
+      margin: 0 5px 2px 0;
+      background: rgba(0, 0, 0, 0.8);
+      height: 40%;
+      border-radius: 40px;
+      outline: 2px solid var(--main);
+    }
+
+    .adminsearch:hover>.adminsearchText {
+      width: 200px;
+      color: white;
+    }
+
+    .adminsearchText:focus {
+      width: 200px;
+    }
+
+    .adminsearchText {
+      border: none;
+      background: none;
+      outline: none;
+      padding-left: 10px;
+      color: white;
+      font-size: 16px;
+      transition: ease 0.3s;
+      line-height: 40px;
+      width: 110px;
+    }
+
+    button {
+      height: 50%;
+      width: 10%;
+      font-size: .8rem;
+      font-weight: 700;
+      color: white;
+      background-color: black;
+      border: 2px solid var(--main);
+      padding: 3px;
+      margin-left: 2%;
+      transition: .3s ease;
+    }
+
+    button:hover {
+      color: black;
+      background-color: white;
+      border: 2px solid black;
+      transform: translateX(-2px) translateY(-2px);
+            box-shadow: 4px 4px 0px 0px #047d92;
+    }
+  }
+    table {
+      // border-collapse: collapse;
+      border-radius: 20px 20px 0 0;
+      // border: 1px solid var(--main);
+      width: 100%;
+      background: linear-gradient(to top, #a3bded 0%, #6991c7 100%);
+    }
+
+    th {
+      text-align: center;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      color: white;
+      background: black;
+    }
+
+    .thLeft {
+      border-radius: 20px 0px 0 0;
+    }
+
+    .thRight {
+      border-radius: 0px 20px 0 0;
+    }
+
+    tbody {
+      display: block;
+      height: 100%;
+      overflow-y: scroll;
+      background: rgba(0, 0, 0, 0.774);
+      font-weight: 600;
+      color: var(--main);
+    }
+    tbody::-webkit-scrollbar {
+      width: 5px;
+      height: 0px;
+    }
+
+    tbody::-webkit-scrollbar-thumb {
+      background-color: white;
+    }
+
+    td {
+      text-align: center;
+      border-bottom: 1px solid var(--main);
+      padding: 8px;
+    }
+
+    tr {
+      width: 100%;
+      display: table;
+      table-layout: fixed;
+    }
+
+    .trHover:hover {
+      background-color: rgb(250, 167, 167);
+      color: black;
+    }
+
+    .emailTD {
+      word-wrap:break-word;
+    }
+}

@@ -1,0 +1,60 @@
+.cus-canvas{
+    position: absolute;
+    z-index: 5;
+}
+.cus-add{
+    display: flex;
+    margin: 12px;
+    flex-wrap: wrap;
+}
+.cus-add-img{
+    width: 48px;
+    height: 48px;
+    object-fit:cover;
+    border-radius: 50px;
+    outline: 1px solid rgb(178, 178, 178);
+    margin-left: 8px;
+    
+
+}
+.scale{
+    transform:scale(.8);
+    height: 100%;
+    transform-origin: top right;
+    
+}
+.cus_flow{
+    display: none;
+}
+.cus_flow2{
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .scale{
+        height: 100%;
+        transform:scale(1);
+        // outline: 1px solid lightgreen;
+    }
+
+    .cus_flow{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 300px;
+        left:40%;
+        transform: rotate(45deg);
+    }
+    
+    .cus_flow2{
+        display: block;
+        position: absolute;
+        z-index: 0;
+        top: 100px;
+        left:20%;
+        transform: rotate(-45deg);
+    }
+    
+  }

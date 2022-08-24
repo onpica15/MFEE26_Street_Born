@@ -1,0 +1,38 @@
+* {
+  // outline: 1px solid green;
+}
+
+.form-select {
+  border: none !important;
+  width: 60%;
+}
+
+.form-select:focus {
+  color: #fff;
+  background-color: #676666;
+  border-color: #adadad;
+}
+
+.cooler_select {
+  border: none;
+}
+
+.cooler_select:focus {
+  color: #fff;
+  background-color: #676666;
+  outline: none;
+}
+
+.cooler_lessonselect {
+  width: 100%;
+}
+
+// -----------RWD------------------------
+@media (max-width: 500px) {
+  .form-select {
+    width: 100%;
+  }
+  .cooler_lessonselect {
+    width: 100%;
+  }
+}

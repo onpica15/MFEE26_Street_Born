@@ -1,0 +1,87 @@
+.Register {
+    background: linear-gradient(to right, #2D2D2D 0%, #2D2D2D 50%, #555555 100%);
+
+    .LoginLogoRWDbox {
+        height: 15%;
+    }
+
+    form {
+        height: 85%;
+        padding-top: 3%;
+    }
+
+    img {
+        width: 12%;
+        object-fit: cover;
+        border-radius: 50%;
+        aspect-ratio: 1/1;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    input {
+        text-align: center;
+        font-size: 1.2rem;
+        color: white;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid gray;
+        padding-bottom: 5px;
+        // margin-bottom: 15px;
+    }
+
+    input:focus {
+        outline: none;
+    }
+
+    P {
+        color: lightcoral;
+    }
+
+    .buttonChangePage {
+        height: 35%;
+        padding: .5em 2em .5em 2em;
+        background-color: var(--main);
+        box-shadow: 3px 3px 0 0 #61dafb82;
+        border: none;
+        transition: 1s ease;
+        margin-top: 24px;
+        text-decoration: none;
+    }
+
+    .buttonChangePage:hover {
+        box-shadow: 8px 8px 0 0 #61dafbd2;
+        background-color: black;
+        color: var(--main);
+        border: 1px solid var(--main);
+    }
+}
+
+// 手機版
+@media screen and (max-width: 1200px) {
+    .Register {
+        .LoginLogoRWDbox {
+            display: none;
+        }
+
+        form {
+            height: 100%;
+            padding-top: 15%;
+        }
+
+        img {
+            width: 20%;
+        }
+
+        input {
+            width: 80%;
+        }
+
+        .buttonChangePage {
+            height: 40%;
+        }
+    }
+}

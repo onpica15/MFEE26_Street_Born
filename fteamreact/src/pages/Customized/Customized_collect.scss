@@ -1,0 +1,15 @@
+.prev-train{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 100%;
+    width: 100%;
+    white-space:nowrap;
+    -ms-overflow-style: none;
+    
+}
+
+.prev-train::-webkit-scrollbar {
+    display: none;
+  }
+  

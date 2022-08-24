@@ -1,0 +1,32 @@
+.cooler_lesson_class {
+  border-left: 1px solid #dfdfdf;
+}
+
+.cooler_lesson_class img {
+  height: 100%;
+}
+
+.cooler_lesson_class p {
+  text-align: justify;
+}
+
+* {
+  // outline: 1px solid green;
+}
+
+// --------------RWD------------------
+@media (min-width: 1500px) {
+  .cooler_lesson_computer {
+    h4 {
+      font-size: 1.9rem;
+    }
+    h5 {
+      font-size: 1.6rem;
+    }
+
+    p,
+    span {
+      font-size: 1.4rem;
+    }
+  }
+}

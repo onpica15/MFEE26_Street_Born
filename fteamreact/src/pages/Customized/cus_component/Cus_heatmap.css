@@ -1,0 +1,25 @@
+.cus_data_tab .color-empty {
+    fill: rgb(227, 227, 227) !important;
+  }
+  
+  .cus_data_tab .color-filled {
+    fill: var(--main) !important;
+  }
+
+  
+
+  .react-calendar-heatmap .color-github-0 {
+    fill: #eeeeee !important;
+  }
+  .react-calendar-heatmap .color-github-1 {
+    fill: #83c9df !important;
+  }
+  .react-calendar-heatmap .color-github-2 {
+    fill: #60cbeb !important;
+  }
+  .react-calendar-heatmap .color-github-3 {
+    fill: #06bff8 !important;
+  }
+  .react-calendar-heatmap .color-github-4 {
+    fill: #1782a2 !important;
+  }
